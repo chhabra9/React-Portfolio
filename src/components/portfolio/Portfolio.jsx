@@ -1,10 +1,12 @@
 import { FeaturedPlayList } from '@material-ui/icons';
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import PortfolioList from '../portfolioList/PortfolioList';
-import "./portfolio.scss"
+import "./portfolio.scss";
+import {contentPortfolio,designPortfolio,mobilePortfolio,webPortfolio,featuredPortfolio} from "../data";
 export default function Portfolio() {
     const imgAddress="https://cdn.dribbble.com/users/311085/screenshots/14017481/media/70751682c0cf2f67b0d09cdc198f134e.png?compress=1&resize=400x300";
     const [selected,setSelected]=useState("featured");
+    const [data,setData]=useState([]);
     
     const list=[
     {
@@ -28,6 +30,29 @@ export default function Portfolio() {
         title:"Content",
     }
     ];
+    useEffect(() => {
+        switch (selected) {
+            case "featured":
+                setData(featuredPortfolio);
+                break;
+            case "web":
+                setData(webPortfolio);
+                break;
+            case "mobile":
+                setData(mobilePortfolio);
+                break;
+            case "design":
+                setData(designPortfolio);
+                break;
+            case "content":
+                setData(contentPortfolio);
+                break;
+            default:
+                setData(contentPortfolio);
+
+        }
+
+    }, [selected]);
    
     return (
         <div className='portfolio' id='portfolio'>
@@ -43,26 +68,13 @@ export default function Portfolio() {
             ))}
            </ul>
            <div className='container'>
-               <div className='item'>
-                   <img src={imgAddress}/>
-                   <h3>Banking App</h3>
-               </div>
-               <div className='item'>
-                   <img src={imgAddress}/>
-                   <h3>Banking App</h3>
-               </div>
-               <div className='item'>
-                   <img src={imgAddress}/>
-                   <h3>Banking App</h3>
-               </div>
-               <div className='item'>
-                   <img src={imgAddress}/>
-                   <h3>Banking App</h3>
-               </div>
-               <div className='item'>
-                   <img src={imgAddress}/>
-                   <h3>Banking App</h3>
-               </div>
+              {data.map(d=>(
+                <div className='item'>
+                   <img src={d.img}/>
+                    <h3>{d.title}</h3>
+                </div>
+              ))}
+
            </div>
           
         </div>
