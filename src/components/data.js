@@ -87,4 +87,30 @@ export const contentPortfolio=[
     },
 
 ];
+export const testimonials=[
+    {
+        id:1,
+        name:"anderew",
+        position:"teacher",
+        opinion:"Leo in vitae turpis massa sed.Habitasse platea dictumst quisque sagittis. Morbi tristique senectus et netus et malesuada",
+        featured:false
+    },
+    {
+        id:2,
+        name:"samar",
+        position:"Buiesness owner",
+        opinion:"Turpis egestas integer eget aliquet nibh praesent. ",
+        featured:true
+    
+    },
+    {
+        id:3,
+        name:"Mathew",
+        position:"backery owner",
+        opinion:"Risus in hendrerit gravida rutrum quisque non tellus orci ac.",
+        featured:false
+    },
+
+
+];
 
