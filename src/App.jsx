@@ -6,6 +6,7 @@ import About from "./components/about/About";
 import Testimonials from "./components/testimonials/Testimonial";
 import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
+import Article from "./components/article/Article";
 import "./app.scss";
 import { useState } from "react";
 function App() {
@@ -18,6 +19,7 @@ function App() {
     <Intro/>
     <About />
     <Portfolio/>
+    <Article />
     <Testimonials/>
     <Contact/>
  </div>
