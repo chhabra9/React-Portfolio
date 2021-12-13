@@ -7,7 +7,7 @@ export default function Works() {
             <div className='left'>
            <div className='card bg'> </div>
            <div className='card'> 
-           <img src='https://images.unsplash.com/photo-1622151834625-66296f9f0e96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWFuJTIwd29ya2luZ3xlbnwwfHwwfHw%3D&w=1000&q=80' />
+           <img src='assets/personal2.jpg' />
            </div>
 
 

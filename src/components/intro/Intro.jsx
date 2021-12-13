@@ -16,7 +16,7 @@ export default function Intro() {
         <div className='intro' id='intro'>
           <div className='left'>
              <div class="imgContainer">
-                 <img src="assets/man.png"/>
+                 <img src="assets\personal1.png"/>
              </div> 
          </div>  
           <div className='right'>
@@ -26,7 +26,7 @@ export default function Intro() {
                 <h3>Freelance <span ref={textRef}> </span></h3>
             </div>
             <a href="#about">
-                <img src="assets/down.png"  alt="" />
+                <img src="assets/arrow.png"  alt="" />
             </a>
         </div> 
         </div>
