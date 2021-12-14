@@ -1,6 +1,9 @@
 import React from 'react'
 import "./article.scss";
 import { Articles } from '../data';
+import {ArrowForwardIosIcon} from "@material-ui/icons";
+import { NavLink as Link } from 'react-router-dom';
+
 export default function Article() {
     return (
         <div className='article' id='article'>
@@ -19,13 +22,14 @@ export default function Article() {
                     <img  src={Article.img}/>
             
                     <p className='content'>
-                    {Article.content.slice(0,100)}<a href='#intro'> Read more ...</a>
+                        {console.log(Article.id)}
+                    {Article.content.slice(0,100)}<Link to={`/articlePage/${Article.id}`}> Read more ...</Link>
                     </p>
         
 
             </div>
             )))}
-            
+           <button>&#62;</button> 
             </div>
         </div>
     )
