@@ -17,7 +17,7 @@ import Testimonials from "./components/testimonials/Testimonial";
 import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
 import Article from "./components/article/Article";
-  
+  import ArticlesPages from './Pages/ArticlesPages/ArticlesPages';
 export default function App() {
     const [menuOpen,setMenuOpen]=useState(false);
     return (
@@ -30,6 +30,7 @@ export default function App() {
  <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
             <Routes> 
                 <Route exact path="/" element={<LandingPage />} />
+                <Route exact path="/articles" element={<ArticlesPages/>} />
                 <Route  path={`/articlePage/:id`} element={<ArticlePage />} />
             </Routes>
         </Router>

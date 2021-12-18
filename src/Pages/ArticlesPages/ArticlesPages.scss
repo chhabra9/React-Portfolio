@@ -1,0 +1,10 @@
+@import "../../global.scss";
+.articlesPages{
+    margin-top: 70px;
+    .home{
+        display: flex;
+        @include mobile{
+            flex-direction: column;
+         }
+    }
+}

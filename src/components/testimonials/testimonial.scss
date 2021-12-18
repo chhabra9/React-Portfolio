@@ -5,8 +5,15 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   @include mobile{
+      justify-content: space-around;
+     
+   }
    h1{
       font-size:50px;
+      @include mobile{
+        font-size: 20px;
+     }
    }
    .container{
       width: 100%;
@@ -14,6 +21,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      @include mobile{
+         flex-direction: column;
+         height: 100%;
+      }
 
       .card{
          width: 250px;
@@ -25,14 +36,26 @@
          justify-content:space-around;
          padding: 20px;
          transition: all 1s ease;
+         @include mobile{
+            height: 180px;
+            margin: 10px 0;
+         }
        &.featured{
           width: 300px;
          height: 45%;
           margin: 0 30px;
           text-decoration: none;
+          @include mobile{
+            width: 250px;
+            height: 180px;
+            margin: 1px;
+         }
        }
        &.inputs{
          margin-left: 30px;
+         @include mobile{
+            margin-left: 0;
+         }
   
          input{
             width: 100%;
@@ -61,6 +84,9 @@
             cursor: pointer;
             color: white;
             background-color: $mainColor;
+            @include mobile{
+              padding: 2px;
+            }
          }
       }
        &:hover{
@@ -70,6 +96,11 @@
             padding: 10px;
             background-color: rgb(236, 229, 229);
             border-radius: 10px;
+            @include mobile{
+               font-size: 12px;
+               padding: 5px;
+               
+            }
          }
          .bottom{
             display: flex;
@@ -83,9 +114,15 @@
             h3{
                display: inline;
                margin-bottom: 5px;
+               @include mobile{
+                  font-size: 14px;
+               }
             }
             h4{
                color: gray;
+               @include mobile{
+                  font-size: 13px;
+               }
             }
          }
       }

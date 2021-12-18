@@ -1,0 +1,11 @@
+@import "../../global.scss";
+.posts{
+    display: flex;
+    flex: 9;
+    flex-wrap: wrap;
+    margin: 20px;
+    @include mobile{
+        align-items: center;
+        justify-content: center;
+     }
+}

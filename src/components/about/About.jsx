@@ -22,10 +22,10 @@ export default function Works() {
                  Magna etiam tempor orci eu lobortis elementum. Ultricies tristique nulla aliquet enim tortor at.
                   Diam vulputate ut pharetra sit. Convallis convallis tellus id interdum velit laoreet id. Ultrices eros in cursus turpis massa tincidunt. 
                   Molestie nunc non blandit massa enim nec dui. 
-                  Velit egestas dui id ornare arcu odio ut sem nulla. Ut sem viverra aliquet eget. 
+                  {/* Velit egestas dui id ornare arcu odio ut sem nulla. Ut sem viverra aliquet eget. 
                   Amet risus nullam eget felis eget nunc lobortis mattis aliquam. Integer enim neque volutpat ac tincidunt vitae semper. Tellus id interdum velit laoreet.
                  Et tortor at risus viverra. Quis blandit turpis cursus in hac habitasse platea. 
-                 Scelerisque purus semper eget duis at tellus at urna. Fringilla ut morbi tincidunt augue interdum velit. Id aliquet risus feugiat in ante metus dictum at tempor.
+                 Scelerisque purus semper eget duis at tellus at urna. Fringilla ut morbi tincidunt augue interdum velit. Id aliquet risus feugiat in ante metus dictum at tempor. */}
                 </p>
             </div>
         </div>
